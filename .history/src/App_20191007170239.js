@@ -3,11 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Components/layouts/Navbar";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-    </Router>
-  );
+  return <Router></Router>;
 }
 
 export default App;
