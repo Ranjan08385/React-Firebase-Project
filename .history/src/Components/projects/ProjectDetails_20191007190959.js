@@ -4,7 +4,7 @@ const ProjectDetails = () => {
   return (
     <div className="container section project-details">
       <div className="card z-depth-0">
-        <div className="card-content">
+        <div className="card content">
           <span className="card-title">Project Title</span>
           <p>
             In 1975 Gates, then a sophomore at Harvard University in Boston,
@@ -14,7 +14,7 @@ const ProjectDetails = () => {
             popular programming language for large computers.
           </p>
         </div>
-        <div className="card-action grey lighten-4 grey-text">
+        <div className="card-action gret lighten-4 grey-text">
           <div>Posted by Microsoft</div>
           <div>4th October, 9am</div>
         </div>

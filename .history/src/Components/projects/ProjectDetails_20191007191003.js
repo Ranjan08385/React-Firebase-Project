@@ -4,7 +4,7 @@ const ProjectDetails = () => {
   return (
     <div className="container section project-details">
       <div className="card z-depth-0">
-        <div className="card-content">
+        <div className="card content">
           <span className="card-title">Project Title</span>
           <p>
             In 1975 Gates, then a sophomore at Harvard University in Boston,
