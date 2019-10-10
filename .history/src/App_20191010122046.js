@@ -4,7 +4,6 @@ import Navbar from "./Components/layouts/Navbar";
 import Dashboard from "./Components/dashboard/Dashboard";
 import ProjectDetails from "./Components/projects/ProjectDetails";
 import SignIn from "./Components/auth/SignIn";
-import SignUp from "./Components/auth/SignUp";
 
 function App() {
   return (
