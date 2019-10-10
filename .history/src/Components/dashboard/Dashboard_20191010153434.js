@@ -5,13 +5,11 @@ import { connect } from "react-redux";
 
 class Dashboard extends Component {
   render() {
-    // console.log(this.props);
-    const { projects } = this.props;
     return (
       <div className="Dashboard container">
         <div className="row">
           <div className="col s12 m6">
-            <ProjectList projects={projects} />
+            <ProjectList />
           </div>
           <div className="col s12 m5 offset-m1">
             <Notifications />
@@ -22,10 +20,4 @@ class Dashboard extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    projects: state.project.projects
-  };
-};
-
-export default connect(mapStateToProps)(Dashboard);
+export default Dashboard;

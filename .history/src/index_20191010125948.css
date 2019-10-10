@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(/public/img/project-bg.png) no-repeat;
+  background-size: 100%;
+}
