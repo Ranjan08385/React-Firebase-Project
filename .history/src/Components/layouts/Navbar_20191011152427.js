@@ -19,7 +19,7 @@ const Navbar = () => {
 };
 
 const mapSateToProps = state => {
-  console.log("Navbar", state);
+  console.log(state);
 };
 
 export default connect(mapSateToProps)(Navbar);

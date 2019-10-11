@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import signIn from "../../store/actions/authActions";
+import signIn from "../../store/actions/projectActions";
 
 class SignIn extends Component {
   constructor(props) {
@@ -46,12 +46,6 @@ class SignIn extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    authError: state.auth.authError
-  };
-};
-
 const mapDispatchToProps = dispatch => {
   return {
     signIn: cred => dispatch(signIn(cred))
@@ -59,6 +53,6 @@ const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(SignIn);
