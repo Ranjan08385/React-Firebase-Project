@@ -15,9 +15,9 @@ const ProjectDetails = props => {
           </div>
           <div className="card-action grey lighten-4 grey-text">
             <div>
-              Posted by {project.authorFirstName} {project.authorLastName}{" "}
+              Posted by {project.authorFirstName} {authorLastName}{" "}
             </div>
-            <div>8 oct, 2017</div>
+            <div>{project.createdAt}</div>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ const ProjectDetails = props => {
   } else {
     return (
       <div className="container center">
-        <p>Loading Project...</p>
+        <p>Loading Project.......</p>
       </div>
     );
   }

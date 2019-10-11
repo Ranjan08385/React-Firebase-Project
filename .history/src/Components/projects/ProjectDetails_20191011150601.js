@@ -17,7 +17,7 @@ const ProjectDetails = props => {
             <div>
               Posted by {project.authorFirstName} {project.authorLastName}{" "}
             </div>
-            <div>8 oct, 2017</div>
+            <div>* oct, 2017</div>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ const ProjectDetails = props => {
   } else {
     return (
       <div className="container center">
-        <p>Loading Project...</p>
+        <p>Loading Project.......</p>
       </div>
     );
   }

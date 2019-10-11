@@ -25,7 +25,7 @@ const ProjectDetails = props => {
   } else {
     return (
       <div className="container center">
-        <p>Loading Project...</p>
+        <p>Loading Project.....</p>
       </div>
     );
   }
