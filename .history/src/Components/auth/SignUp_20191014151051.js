@@ -58,10 +58,4 @@ class SignIn extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    auth: state.firebase.auth
-  };
-};
-
-export default connect(mapStateToProps)(SignIn);
+export default SignIn;

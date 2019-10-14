@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-import { connect } from "react-redux";
 
 class SignIn extends Component {
   constructor(props) {
@@ -58,10 +57,4 @@ class SignIn extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    auth: state.firebase.auth
-  };
-};
-
-export default connect(mapStateToProps)(SignIn);
+export default SignIn;
