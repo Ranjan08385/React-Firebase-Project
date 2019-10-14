@@ -20,7 +20,7 @@ const ProjectDetails = props => {
             <div>
               Posted by {project.authorFirstName} {project.authorLastName}{" "}
             </div>
-            <div>{moment(project.createdAt.toDate()).calendar()}</div>
+            <div>8 oct, 2017</div>
           </div>
         </div>
       </div>

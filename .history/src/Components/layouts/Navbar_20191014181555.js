@@ -5,9 +5,9 @@ import SignOutLink from "./SignOutLink";
 import { connect } from "react-redux";
 
 const Navbar = props => {
-  const { auth, profile } = props;
+  const { auth } = props;
   console.log("authid is", auth.uid);
-  const links = auth.uid ? <SignInLink profile={profile} /> : <SignOutLink />;
+  const links = auth.uid ? <SignInLink /> : <SignOutLink />;
   return (
     <nav className="nav-wrapper grey darken-3">
       <div className="container">
