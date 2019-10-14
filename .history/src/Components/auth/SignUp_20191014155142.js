@@ -24,11 +24,10 @@ class SignIn extends Component {
   handleSubmit = e => {
     e.preventDefault();
     console.log(this.state);
-    this.props.signUp(this.state);
   };
 
   render() {
-    const { auth, authError } = this.props;
+    const { auth } = this.props;
     if (auth.uid) return <Redirect to="/" />;
     return (
       <div className="container">
@@ -53,9 +52,6 @@ class SignIn extends Component {
           </div>
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
-            <div className="red-text center">
-              {authError ? <p>{authError}</p> : null}
-            </div>
           </div>
         </form>
       </div>
@@ -63,20 +59,10 @@ class SignIn extends Component {
   }
 }
 
-const mapDispatchToState = dispatch => {
-  return {
-    signUp: newUser => dispatch(signUp(newUser))
-  };
-};
-
 const mapStateToProps = state => {
   return {
-    auth: state.firebase.auth,
-    authError: state.auth.authError
+    auth: state.firebase.auth
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToState
-)(SignIn);
+export default connect(mapStateToProps)(SignIn);

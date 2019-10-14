@@ -53,9 +53,6 @@ class SignIn extends Component {
           </div>
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
-            <div className="red-text center">
-              {authError ? <p>{authError}</p> : null}
-            </div>
           </div>
         </form>
       </div>
@@ -72,7 +69,7 @@ const mapDispatchToState = dispatch => {
 const mapStateToProps = state => {
   return {
     auth: state.firebase.auth,
-    authError: state.auth.authError
+    authError: state.firebase.authError
   };
 };
 

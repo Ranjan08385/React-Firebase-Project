@@ -72,7 +72,7 @@ const mapDispatchToState = dispatch => {
 const mapStateToProps = state => {
   return {
     auth: state.firebase.auth,
-    authError: state.auth.authError
+    authError: state.firebase.authError
   };
 };
 
