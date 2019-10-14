@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { signOut } from "../../store/actions/authActions";
+import signOut from "../../store/actions/authActions";
 
 const SignInLink = props => {
   return (
@@ -23,7 +23,7 @@ const SignInLink = props => {
 
 const mapDipatchToProps = dispatch => {
   return {
-    signOut: () => dispatch(signOut())
+    signOut: () => dispatch(signOut)
   };
 };
 

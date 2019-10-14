@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { signIn } from "../../store/actions/authActions";
+import signIn from "../../store/actions/authActions";
 
 class SignIn extends Component {
   constructor(props) {
@@ -25,8 +25,7 @@ class SignIn extends Component {
   };
 
   render() {
-    const { authError } = this.props;
-    console.log(authError);
+    const { authError } = this.state;
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
@@ -42,7 +41,7 @@ class SignIn extends Component {
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Login</button>
             <div className="red-text center">
-              {authError ? <p>{authError}</p> : null}
+              {authError ? <p>authError</p> : null}
             </div>
           </div>
         </form>

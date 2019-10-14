@@ -1,4 +1,4 @@
-export const signIn = Credentials => {
+const signIn = Credentials => {
   return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
     firebase
@@ -13,7 +13,7 @@ export const signIn = Credentials => {
   };
 };
 
-export const signOut = () => {
+const signOut = () => {
   return (dispatch, getState, { getFirebase }) => {
     const firebase = getFirebase();
     firebase
@@ -24,3 +24,5 @@ export const signOut = () => {
       });
   };
 };
+
+export default signIn;

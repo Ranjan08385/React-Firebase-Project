@@ -1,9 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
-import { signOut } from "../../store/actions/authActions";
-
-const SignInLink = props => {
+import SignOut from "../../store/actions/projectActions";
+const SignInLink = () => {
   return (
     <ul className="right">
       <li>
