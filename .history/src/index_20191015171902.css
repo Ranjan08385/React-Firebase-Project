@@ -53,3 +53,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .card:hover {
   transform: scale(1.02);
 }
+
+.container {
+  border-radius: 100px;
+}

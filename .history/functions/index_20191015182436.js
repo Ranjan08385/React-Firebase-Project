@@ -18,7 +18,7 @@ const createNotification = notification => {
 exports.projectCreated = functions.firestore
   .document("projects/{projectId}")
   .onCreate(doc => {
-    const project = doc.data();
+    // const project = doc.date();
 
     const notification = {
       content: "Added a new Project",
